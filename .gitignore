@@ -1,5 +1,5 @@
+# Ignorar arquivos de configuração do Android Studio
 *.iml
-.gradle
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -7,9 +7,18 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+
+# Ignorar arquivos do sistema operacional
 .DS_Store
+
+# Não ignore a pasta .gradle e os arquivos build necessários
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
+
+# Ignorar build intermediário, mas manter o wrapper do Gradle
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
